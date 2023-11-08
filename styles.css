@@ -25,7 +25,7 @@ body{
     min-width: 327px;
     margin-left: 24px;
     margin-right: 24px;
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 23px;
     background: #FFF;
@@ -115,6 +115,15 @@ body{
 
 /* JS styling link */
 
+.accordion .accordion-title{
+  color: #1E1F36;
+  font-family: Kumbh Sans;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 60px 130px 20px;
+}
+
 .accordion .faq.active .question{
     height: auto;
     border-bottom: none;
@@ -137,14 +146,22 @@ body{
 }
 
 
-@media (min-width: 1440px){   
+@media (min-width: 1440px){ 
+  .accordion .accordion-title{
+    text-align: left;
+    margin: 0px 0px 20px;
+  }
 
     .accordion{
-        flex-direction: row;
-        width: 920px;
-        max-height: auto;
-        height: 509px;
-        overflow: hidden;
+      background: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+      background-color: #FFF;
+      background-repeat: no-repeat, no-repeat;
+      background-position: -70px center, -560px -300px;
+      
+      flex-direction: row;
+      width: 920px;
+      max-height: auto;
+      height: 509px;
     }
 
     .head-img-mob,
@@ -152,9 +169,7 @@ body{
         display: none;
     }
 
-    .bg-desktop,
-    .box-desktop,
-    .woman-desktop{
+    .box-desktop{
         display: block;
     }
 
@@ -171,22 +186,11 @@ body{
         position: absolute;
       }
       
-      .bg-desktop {
-        z-index: 1;
-
-        left: -600px;
-        top: -200px;
-      }
       
       .box-desktop {
         z-index: 3;
-        left: -100px;
+        left: -93px;
         top: 300px;
-      }
-      
-      .woman-desktop {
-        z-index: 2;
-        left: -80px; 
       }
 
       .all-questions {
@@ -194,11 +198,13 @@ body{
       }
 
       .faq{
-        width: 319px;
+        width: auto;
     }
       
       .accordion .faq .question {
         font-size: 14px;
+        width: 37ch;
+        margin: 0px 0px 19px;
       }
       
       .accordion .faq .question:hover {
@@ -212,7 +218,8 @@ body{
       }
       
       .accordion .faq .answer {
-        width: 319px;
         font-size: 14px;
+        width: 37ch;
+        margin: 0px 0px 0px;
       }
         

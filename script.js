@@ -17,7 +17,6 @@ for (let i = 0; i < accordion.length; i++) {
 
             // აქტიური შეკითხვის სტილები
             const question = this.querySelector('.question');
-            question.style.color = '#1E1F36';
             question.style.fontWeight = '700';
         } else {
             // თუ შეკითხვა არაა აქტიური, პასუხი იმალება
