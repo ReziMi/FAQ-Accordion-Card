@@ -207,8 +207,8 @@ body{
         margin: 0px 0px 19px;
       }
       
-      .accordion .faq .question:hover {
-        color: #F47B56;
+      .question:hover {
+        color: #F47B56 !important;
         cursor: pointer;
       }
       
@@ -222,4 +222,4 @@ body{
         width: 37ch;
         margin: 0px 0px 0px;
       }
-        
+}
